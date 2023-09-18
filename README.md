@@ -60,5 +60,8 @@ extra points: add and external data source that connects through an API endpoint
 ### dashboard design
 
 the dashboard ingests data from different sources, namely:
-1.  a google cloud bucket via custom sql query calculating metrics for the candidates previous and current jobs, these are used later on in the dashboard to compare an especific candidate against the overall census, as shown below:
+1.  google cloud bucket: via custom sql query calculating metrics for the candidates previous and current jobs, these are used later on in the dashboard to compare an especific candidate against the overall census, as shown below:
 ![big query custom sql](/references/big_query_custom_sql_query.png "big query custom sql query")
+2. connected spreadsheets: raw data ![raw data from gsheets](/references/google_sheets_source.png "google sheets source")
+3. local transformed files: resulting of the files contained in the `notebooks` and `scripts` folders,  simplify the obtention of complementary data such as the candidate's country, creating flags for candidates with at least one degree, getting the amount of education of each candidate, and additional information signalling a candidate's suitability. ![local import](/references/csv_import.png "local data source")
+4. cloud bucket: as an additional exercise illustrating raw data ingestion from the cloud ![google cloud bucket ingestion](/references/google_cloud_bucke_raw_data.png "google cloud bucket raw data ingestion")
