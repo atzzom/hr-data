@@ -2,6 +2,12 @@
 
 ## data manipulation
 
+use the data model to generate a well documented and functional Postgresql code that answer the following exercises: *(tip: will be useful to create the data model tables on a db for this and next module exercise)*
+
+**table creation and data load**
+
+the `references/tables creation.sql` script contains the statements to create the tables and set the proper relationships between them. Additionally, in the `references/data load.sql` script the data is loaded into each of the previously created tables in the database.
+
 1. which was the first job of every candidate? (in case of a tie choose a random job, it is not necessary to clean all the data.)
 
 ```sql
@@ -41,7 +47,7 @@ Entity Relationship Diagram (ERD) available at `references/nexton data modeling.
 ![HR database model](references/data_modeling.jpg "HR database entity relationship diagram")
 
 
-## dashboard and business intelligence
+## dashboard and business intelligence
 
 Use the previous data model to create an exploratory dashboard that helps the users to find the best talent to hire. Based on the given data, which would be your top 20 best candidtes to hire? Why? You can use any visualization tool of your choice and external data sources, but it needs to be shareable with a link. (Some examples are Tableau, Power BI, Google Data Studio).
 
