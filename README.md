@@ -1,4 +1,4 @@
-# hr-data
+# hr data
 
 ## data manipulation
 
@@ -40,8 +40,11 @@ Entity Relationship Diagram (ERD) available at `references/nexton data modeling.
 
 ![HR database model](references/data_modeling.jpg "HR database entity relationship diagram")
 
+
 ## dashboard and business intelligence
 
 Use the previous data model to create an exploratory dashboard that helps the users to find the best talent to hire. Based on the given data, which would be your top 20 best candidtes to hire? Why? You can use any visualization tool of your choice and external data sources, but it needs to be shareable with a link. (Some examples are Tableau, Power BI, Google Data Studio).
 
 extra points: add and external data source that connects through an API endpoint.
+
+[link to dashboard report](https://lookerstudio.google.com/reporting/9cac680b-727f-4613-9cf1-aa2ff0c846bf/page/RTwcD)
