@@ -1,5 +1,7 @@
 # hr data
 
+this repository organization follows the [cookiecutter data science structure](https://drivendata.github.io/cookiecutter-data-science/) developing the questions below for HR sample data:
+
 ## data manipulation
 
 use the data model to generate a well documented and functional Postgresql code that answer the following exercises: *(tip: will be useful to create the data model tables on a db for this and next module exercise)*
@@ -49,8 +51,14 @@ Entity Relationship Diagram (ERD) available at `references/nexton data modeling.
 
 ## dashboard and business intelligence
 
-Use the previous data model to create an exploratory dashboard that helps the users to find the best talent to hire. Based on the given data, which would be your top 20 best candidtes to hire? Why? You can use any visualization tool of your choice and external data sources, but it needs to be shareable with a link. (Some examples are Tableau, Power BI, Google Data Studio).
+use the previous data model to create an exploratory dashboard that helps the users to find the best talent to hire. Based on the given data, which would be your top 20 best candidtes to hire? Why? You can use any visualization tool of your choice and external data sources, but it needs to be shareable with a link. (Some examples are Tableau, Power BI, Google Data Studio).
 
 extra points: add and external data source that connects through an API endpoint.
 
 [link to dashboard report](https://lookerstudio.google.com/reporting/9cac680b-727f-4613-9cf1-aa2ff0c846bf/page/RTwcD)
+
+### dashboard design
+
+the dashboard ingests data from different sources, namely:
+1.  a google cloud bucket via custom sql query calculating metrics for the candidates previous and current jobs, these are used later on in the dashboard to compare an especific candidate against the overall census, as shown below:
+![big query custom sql](/references/big_query_custom_sql_query.png "big query custom sql query")
