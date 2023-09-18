@@ -37,6 +37,7 @@ select * from temp_running_sum
 1. using the following tables, ***re-draw*** a diagram of a dimensional data model based on these table. Identify facts, dimensions and relationships.
 
 Entity Relationship Diagram (ERD) available at `references/nexton data modeling.jpg` and `references/nexton data modeling.drawio`
+![HR database model]("references/nexton data modeling.jpg")
 
 ## dashboard and business intelligence
 
