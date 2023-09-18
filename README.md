@@ -40,6 +40,30 @@ from jobs j
 
 select * from temp_running_sum
 ```
+
+3. how would you calculate the tenure of the hires?
+
+the following query extracts the latest hire year over a partition and subtracts it to the current year:
+
+```sql
+select
+	ccj.*
+	,j.title
+	,j.date_range
+	,cast(substring(j.date_range from '\d{4}') as int) as past_job_year
+	,date_part('year', (select current_date)) as current_year
+	,max(cast(substring(j.date_range from '\d{4}') as int)) over (
+		partition by ccj.candidate_id
+	) as latest_hire_year
+	,date_part('year', (select current_date)) - max(cast(substring(j.date_range from '\d{4}') as int)) over (
+		partition by ccj.candidate_id
+	) as tenure_yrs
+from candidate_current_jobs ccj
+join jobs j
+on ccj.job_id = j.job_id
+order by candidate_id
+```
+
 ## data modeling
 
 1. using the following tables, ***re-draw*** a diagram of a dimensional data model based on these table. Identify facts, dimensions and relationships.
