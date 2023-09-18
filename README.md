@@ -38,7 +38,7 @@ select * from temp_running_sum
 
 Entity Relationship Diagram (ERD) available at `references/nexton data modeling.jpg` and `references/nexton data modeling.drawio`
 
-![HR database model]("references/nexton%20%data%20%modeling.jpg")
+![HR database model](references/data_modeling.jpg "HR database entity relationship diagram")
 
 ## dashboard and business intelligence
 
