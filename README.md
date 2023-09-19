@@ -42,6 +42,7 @@ from jobs j
 
 select * from temp_running_sum
 ```
+![interim answer](/references/query_02.png "interim answer")
 
 3. how would you calculate the tenure of the hires?
 
