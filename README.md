@@ -89,3 +89,11 @@ the dashboard ingests data from different sources, namely:
 2. connected spreadsheets: raw data ![raw data from gsheets](/references/google_sheets_source.png "google sheets source")
 3. local transformed files: resulting of the files contained in the `notebooks` and `scripts` folders,  simplify the obtention of complementary data such as the candidate's country, creating flags for candidates with at least one degree, getting the amount of education of each candidate, and additional information signalling a candidate's suitability. ![local import](/references/csv_import.png "local data source")
 4. cloud bucket: as an additional exercise illustrating raw data ingestion from the cloud ![google cloud bucket ingestion](/references/google_cloud_bucke_raw_data.png "google cloud bucket raw data ingestion")
+
+### conclusions
+
+- the dashboard shows a talent concentration in Argentina, the United States and Brazil, more generally in latinamerica, this doesn't necessary means lack of talent in other regions but could rather reflect the focus of the company.
+- ~4.8% of the talent is being selected for hire
+- there's a strong correlation between having a degree and hiring; only 5 hired candidates out of 1913 didn't have a degree (0.03%)
+- more cleaning useful, for example analysis by category, better visibility of especific roles under different naming conventions
+- some data needs to be revisited, for example, assess the meaning of employees with more than one current job, skills, etc
