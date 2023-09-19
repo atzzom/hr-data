@@ -27,8 +27,7 @@ from candidate_past_jobs as cpj
 join jobs as j
 on cpj.job_id = j.job_id
 ```
-Results:
-![candidates's first job](/references/query_01.png "candidate's first job"*
+![candidates's first job](/references/query_01.png "candidate's first job")
 
 2. calculate the total and running sum by years of experience, candidate and job, from the first one to the current one. (order by start_date from date_range, it is not necessary to clean all the data).
 
